@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kvana.sharedpreference.MainActivity">
+
+    <TextView
+        android:id="@+id/shared_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Shared Preferences!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/uname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shared_tv"
+        android:layout_marginTop="20dp"
+        android:hint="user name"
+        android:inputType="text"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/pass_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uname_et"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pass_et"
+        android:layout_marginBottom="30dp"
+        android:onClick="save"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/goto_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_et"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/save_btn"
+        android:onClick="next"
+        android:text="Go To B" />
+
+</RelativeLayout>
